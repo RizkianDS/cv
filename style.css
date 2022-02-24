@@ -1,0 +1,239 @@
+body {
+    background-image: url(img/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* Navbar */
+
+.navbar {
+    background-color: rgb(15, 15, 15);
+    border: solid rgb(136, 135, 135);
+    border-radius: 0 0 20px 20px;
+    border-width: 2px;
+    margin-top: -10p;
+    padding-top: 10px;
+}
+
+.navbar-brand,
+.nav-link {
+    font-size: 18px;
+    font-weight: 400;
+    color: white !important;
+    text-shadow: 1px 1px 1px rgba(85, 85, 85, 0.8);
+}
+
+.navbar-brand {
+    font-size: 32px;
+}
+
+.nav-link:hover::after {
+    content: '';
+    display: block;
+    border-bottom: 3px solid rgb(190, 190, 190);
+    width: 8%;
+    margin-left: 5px;
+    margin-bottom: -8px;
+    padding-bottom: 5px;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* Info Panel */
+
+.info-panel {
+    background-image: url(img/bg1.jpg);
+    background-size: cover;
+    background-position: right;
+    background-repeat: no-repeat;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+    margin-top: 80px;
+    margin-bottom: 50px;
+    padding: 10px;
+    height: 420px;
+    width: 100%;
+}
+
+.info-panel img {
+    height: 40px;
+    width: 40px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* Data Diri */
+
+.data-pribadi img {
+    height: auto;
+    width: 100%;
+    border: solid white;
+    border-radius: 15px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+}
+
+.data-pribadi h4 {
+    font-size: 18px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
+    color: white;
+    margin-top: 15px;
+}
+
+.data-pribadi p {
+    font-size: 12px;
+    color: white;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* Background Panel */
+
+.pendidikan,
+.pekerjaan,
+.soft-skill,
+.hard-skill {
+    background-color: rgb(7, 7, 7);
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    border-radius: 20px;
+    padding: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-left: 0;
+}
+
+
+/* Font Panel */
+
+.pendidikan,
+.pekerjaan,
+.soft-skill,
+.hard-skill,
+h4 {
+    font-size: 18px;
+    color: white;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+}
+
+.pendidikan,
+.pekerjaan,
+.soft-skill,
+.hard-skill,
+p {
+    font-size: 12px;
+    color: rgb(155, 155, 155);
+    margin-left: 30px;
+    font-style: italic;
+}
+
+.pendidikan,
+.pekerjaan,
+h5 {
+    font-size: 16px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: bold;
+}
+
+.pendidikan,
+.pekerjaan,
+h6 {
+    font-size: 12px;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.3);
+    color: white;
+    font-weight: 700;
+}
+
+
+/* Pengalaman Kerja */
+
+.pekerjaan {
+    height: auto;
+    width: 100%;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* Utility */
+
+.btn {
+    text-transform: uppercase;
+    border-radius: 20px;
+    box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+    margin-top: 30px;
+}
+
+
+/* Footer */
+
+.footer {
+    background-color: rgb(7, 7, 7);
+    padding: 5px;
+    text-align: center;
+}
+
+.footer p {
+    color: white;
+    text-shadow: 1px 1px 1px rgba(85, 85, 85, 0.8);
+    font-size: 14px;
+    margin: auto;
+}
+
+
+/* ---------------------------------------------------------- */
+
+
+/* Desktop Version */
+
+@media (min-width: 992px) {
+    .navbar {
+        background-color: rgba(0, 0, 0, 0);
+        border: none;
+        margin-top: -10px;
+    }
+    .navbar-nav {
+        background-color: rgba(85, 85, 85, 1);
+        box-shadow: 2px 2px 1px rgba(0, 0, 0, 0.7);
+        border: solid white;
+        border-radius: 0 0 15px 15px;
+        margin-top: -20px;
+        padding-top: 30px;
+        padding-bottom: 5px;
+        position: fixed;
+        top: auto;
+        right: 80px;
+        z-index: 1;
+    }
+    .nav-link {
+        text-transform: uppercase;
+        margin-left: 10px;
+        margin-right: 10px;
+    }
+    .nav-link:hover::after {
+        width: 70%;
+        margin: auto;
+        padding-bottom: 5px;
+        margin-bottom: -8px;
+    }
+    .info-panel {
+        background-position: center;
+        margin-top: 100px;
+    }
+}
